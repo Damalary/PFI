@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kb2plus - Interactions HTML et CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/kb2plus.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>kb2plus</h1>
+            <img src="images/logo-html-et-css.png" alt="Logo" class="header-logo">
+            <nav class="navbar">
+                <ul class="grid-nav">
+                    <li><a href="http://127.0.0.1:5500/galerie.html">Galerie</a></li>
+                    <li><a href="http://127.0.0.1:5500/horaire.html">Horaire</a></li>
+                    <li><a href="http://127.0.0.1:5500/kb2plus.html">KB2Plus</a></li>
+                    <li><a href="http://127.0.0.1:5500/professions.html">Professions</a></li>
+                    <li><a href="http://127.0.0.1:5500/sources.html">Source</a></li>
+                    <li><a href="http://127.0.0.1:5500/sujet.html">Sujet</a></li>
+                    <li><a href="http://127.0.0.1:5500/index.html">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Menu Déroulant -->
+        <section class="dropdown-section">
+            <h2>Menu Déroulant</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Options</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h2>Graphique SVG Interactif</h2>
+            <div class="chart-container">
+                <svg viewBox="0 0 100 100" class="chart">
+                    <circle cx="50" cy="50" r="40" class="circle-background"></circle>
+                    <circle cx="50" cy="50" r="40" class="circle-progress"></circle>
+                    <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" class="circle-text">75%</text>
+                </svg>
+                <p>Ce graphique montre une progression animée de 75%.</p>
+            </div>
+        </section>
+
+        <section class="accordion-section">
+            <h2>Menu Accordéon</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">Section 1</button>
+                    <div class="accordion-content">
+                        <p>Contenu de la section 1.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Section 2</button>
+                    <div class="accordion-content">
+                        <p>Contenu de la section 2.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Section 3</button>
+                    <div class="accordion-content">
+                        <p>Contenu de la section 3.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-bar-section">
+            <h2>Barre de Progression SVG</h2>
+            <div class="progress-container">
+                <svg viewBox="0 0 100 10" class="progress-bar">
+                    <rect x="0" y="0" width="100" height="10" class="progress-bar-background"></rect>
+                    <rect x="0" y="0" width="75" height="10" class="progress-bar-fill"></rect>
+                    <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" ></text>
+                </svg>
+                <p>Cette barre indique une progression de 75%.</p>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Carte Animée avec Infobulles</h2>
+            <div class="map-container">
+                <svg viewBox="0 0 200 100" class="map">
+                    <circle cx="50" cy="50" r="15" class="map-point" data-info="Point 1 : Paris"></circle>
+                    <circle cx="120" cy="30" r="15" class="map-point" data-info="Point 2 : Lyon"></circle>
+                    <circle cx="170" cy="80" r="15" class="map-point" data-info="Point 3 : Marseille"></circle>
+                </svg>
+                <div class="tooltip">Infobulle</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Damien Alary, 2024. Tous droits réservés.</p>
+        <p>Sources : <a href="#">Voir les sources</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* Damien Alary */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+.header-logo {
+    display: block;
+    margin: 10px auto 20px;
+    max-width: 100px;
+    height: auto;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.grid-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.grid-nav a:hover {
+    background-color: #34495e;
+    border: 2px solid #fff;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;         
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; 
+    }
+
+    .header-logo {
+        max-width: 80px; 
+    }
+
+    .grid-nav {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.9em; 
+    }
+
+    .image-container {
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; 
+    }
+
+    .header-logo {
+        max-width: 60px; 
+    }
+
+    .grid-nav {
+        grid-template-columns: 1fr; 
+        gap: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.85em;
+        line-height: 1.4; 
+    }
+
+    .image-container {
+        height: auto; 
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+}
+
